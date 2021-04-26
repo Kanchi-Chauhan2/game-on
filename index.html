@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game On</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    
+        <!-------------------------BANNER-------------------->
+
+        <div class="banner-container">
+            <div class="banner-container__menu">
+                <div class="banner-container__menu--logo">
+                    <img src="img/logo_white.png" alt="logo-image"/>
+                </div>
+                <div class="banner-container__menu--menulist">
+                    <ul>
+                        <li>Home</li>
+                        <li>How to play</li>
+                        <li>About Us</li>
+                        <li>Help Desk</li>
+                    </ul>
+                </div>
+                <div class="banner-container__menu--socialicons">
+                    <div class="banner-container__menu--socialicons--facebook">
+                        <i class="fa fa-facebook" style="color:whitesmoke"></i>
+                    </div>
+                    <div class="banner-container__menu--socialicons--pinterest">
+                        <i class="fa fa-pinterest" style="color:whitesmoke"></i>
+                    </div>
+                    <div class="banner-container__menu--socialicons--twitter">
+                        <i class="fa fa-twitter" style="color:whitesmoke"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-container__backimg">
+                <div class="banner-container__backimg--backparticles">
+                </div>
+                <div class="banner-container__backimg--frontparticles">
+                </div>
+                <div class="banner-container__backimg--player">
+                </div>
+                <div class="banner-container__backimg--title">
+                    <input type="text" class="input-numbers" placeholder="Enter phone number"/>
+                    <button>Get App Link</button>
+                </div>
+            </div>
+        </div>
+         
+        <script>
+            let container=document.querySelector('.banner-container__backimg');
+            container.addEventListener('mousemove',(e)=>{
+                let player=document.querySelector('.banner-container__backimg--player');
+                let height = player.getBoundingClientRect().height;
+                let width = player.getBoundingClientRect().width;
+                console.log(width);
+                let x=(width-e.pageX*3)/100;
+                let y=(height-e.pageY*3)/100;
+              player.style.transform=`translate(${x}px) translateY(${y}px)`;    
+            });
+
+            let container1=document.querySelector('.banner-container__backimg');
+            container1.addEventListener('mousemove',(e)=>{
+                let ball=document.querySelector('.banner-container__backimg--ball');
+                let height = ball.getBoundingClientRect().height;
+                let width = ball.getBoundingClientRect().width;
+                console.log(width);
+                let x=(width-e.pageX*2)/100;
+                let y=(height-e.pageY*2)/100;
+              ball.style.transform=`translate(${x}px) translateY(${y}px)`;    
+            });
+        </script>
+    <!----------------------------------------page2------------------------------------------>
+
+    <div class="aboutscc">
+        <div class="aboutscc__1">
+            <div class="aboutscc__1--1">
+                <img src="img/logo-chennai.png" alt="logo-image"/>
+            </div>
+            <div class="aboutscc__1--2">
+                SCC FOOTBALL CLUB
+            </div>
+            <div class="aboutscc__1--3">
+                READ MORE
+            </div>
+            <div class="aboutscc__1--4">
+                BOOK MY TICKET
+            </div>
+        </div>
+        <div class="aboutscc__2">
+            <div class="aboutscc__2--1">
+                ABOUT <span style="color:cornflowerblue;">SCC</span>
+            </div>
+            <div class="aboutscc__2--underline">
+
+            </div>
+            <div class="aboutscc__2--2">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </div>
+            <div class="aboutscc__2--3">
+                <div class="aboutscc__2--3--matches">
+                    <a href="#">MATCHES</a>
+                </div>
+                <div class="aboutscc__2--3--statics">
+                    <a href="#">STATICS</a>
+                </div>
+                <div class="aboutscc__2--3--training">
+                    <a href="#">TRAINING</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------LATEST RESULT------------------------>
+
+    <div class="latest-result">
+        <div class="latest-result__1">
+            <div class="latest-result__1--heading">
+                LATEST <span style="color:cornflowerblue;">RESULTS</span>
+            </div>
+            <div class="latest-result__1--underline">
+
+            </div>
+        </div>
+        <div class="latest-result__2">
+            <div class="latest-result__2--heading">
+                UEFA CHAMPIONS LEAGUE
+
+            </div>
+            <div class="latest-result__2--para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, nemo tenetur magnam eveniet sed aut, iste facere quisquam, cumque, vitae quis deleniti animi. A ipsum iusto, temporibus, beatae porro nemo.
+            </div>
+        </div>
+        <div class="latest-result__3">
+            <div class="latest-result__3--1">
+                <div class="latest-result__3--1--logo">
+                    <img src="img/logo.png" alt="logo-image"/>
+                    <div class="latest-result__3--1--logo--sub">
+                        <img src="img/logo-chennai.png" style="width:24rem; height:24rem;" alt="logo-image"/>
+                    </div>
+                    <div class="latest-result__3--1--logo--sub1">
+                        <img src="img/resultBoard.png" alt="resultboard-image"/>
+                    </div>
+                </div>               
+            </div>
+            <div class="latest-result__3--2">
+                <div class="latest-result__3--2--numbers">
+                    <div class="latest-result__3--2--numbers--one">
+                        1
+                    </div>
+                    <div class="latest-result__3--2--numbers--dash">
+                        -
+                    </div>
+                    <div class="latest-result__3--2--numbers--three">
+                        3
+                    </div>
+                </div>
+                <div class="latest-result__3--2--date">
+                    May 16,2015 15:30PM
+                </div>
+                <div class="latest-result__3--2--stadium">
+                    WBEYSLEY STADIUM
+                </div>
+                <div class="latest-result__3--2--location">
+                    (LONDON)
+                </div>
+            </div>
+            <div class="latest-result__3--3">
+                <div class="latest-result__3--3--logo">
+                    <img src="img/logo.png" alt="logo-image"/>
+                    <div class="latest-result__3--3--logo--sub">
+                        <img src="img/logo-chennai.png" style="width:24rem; height:24rem;" alt="logo-image"/>
+                    </div>
+                    <div class="latest-result__3--3--logo--sub1">
+                        <!--<img src="img/resultBoard.png"/>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="latest-result__4">
+            <a href="#">SCORE BOARD</a>
+        </div>
+    </div>
+    <!--<script>
+        var resultboard=document.querySelector('.latest-result__3--1--logo--sub1 img');
+        if()
+        resultboard.style.visibility="hidden";
+    </script>-->
+    <!------------------FOOTER----------------------->
+    <div class="footer-container">
+        <div class="footer-container__logo">
+            <img src="img/logo_white.png" alt="logo-image"/>
+        </div>
+        <div class="footer-container__menu">
+            <ul style="color:white; list-style: none; line-height: 4rem;">
+                <li>Home</li>
+                <li>How to play</li>
+                <li>About Us</li>
+                <li>Help Desk</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="footer-container__socialicons">
+            <div class="footer-container__socialicons--facebook">
+                <i class="fa fa-facebook" style="color:whitesmoke"></i>
+            </div>
+            <div class="footer-container__socialicons--pinterest">
+                <i class="fa fa-pinterest" style="color:whitesmoke"></i>
+            </div>
+            <div class="footer-container__socialicons--twitter">
+                <i class="fa fa-twitter" style="color:whitesmoke"></i>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
