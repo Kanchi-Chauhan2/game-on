@@ -98,7 +98,7 @@ body, a, p, input, select, textarea {
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
-    background-image: url(../../img/back-blue.jpg);
+    background-image: url(../img/back-blue.jpg);
     background-size: cover;
     position: relative;
     overflow: hidden; }
@@ -107,7 +107,7 @@ body, a, p, input, select, textarea {
       height: 100vh;
       width: 100%;
       background-repeat: no-repeat;
-      background-image: url(../../img/back_particlesblue.png);
+      background-image: url(../img/back_particlesblue.png);
       animation: backparticles 1s ease-out;
       background-size: 62%;
       backface-visibility: hidden;
@@ -117,7 +117,7 @@ body, a, p, input, select, textarea {
       height: 100vh;
       width: 100%;
       background-repeat: no-repeat;
-      background-image: url(../../img/front_particlesblue.png);
+      background-image: url(../img/front_particlesblue.png);
       animation: frontparticles 1s ease-out;
       background-size: 76rem 71rem;
       background-position: 13rem;
@@ -127,7 +127,7 @@ body, a, p, input, select, textarea {
       width: 100%;
       height: 100vh;
       background-repeat: no-repeat;
-      background-image: url(../../img/1_cover.png);
+      background-image: url(../img/1_cover.png);
       background-size: 134rem;
       background-position: 19rem 7rem;
       animation: player 1.4s;
@@ -200,7 +200,7 @@ body, a, p, input, select, textarea {
   flex-direction: column; }
   .aboutscc__1 {
     display: flex;
-    background-image: url(../../img/whiteBg.jpg);
+    background-image: url(../img/whiteBg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -289,7 +289,7 @@ body, a, p, input, select, textarea {
 .latest-result {
   width: 100%;
   height: 100vh;
-  background-image: url(../../img/latestnews.jpg);
+  background-image: url(../img/latestnews.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -382,7 +382,7 @@ body, a, p, input, select, textarea {
         top: 4rem;
         right: -21rem;
         z-index: -1;
-        background-image: url(../../img/resultBoard.png);
+        background-image: url(../img/resultBoard.png);
         background-repeat: no-repeat;
         background-size: 28rem 18rem;
         background-position: 19rem 0rem;
@@ -428,7 +428,7 @@ body, a, p, input, select, textarea {
 
 .footer-container {
   width: 100%;
-  background-image: url(../../img/heroesBg.jpg);
+  background-image: url(../img/heroesBg.jpg);
   background-size: cover;
   height: 50vh;
   display: flex;
@@ -488,7 +488,7 @@ body, a, p, input, select, textarea {
       border: 1px solid cornflowerblue; }
 
 .about-container {
-  background-image: url(../../img/innerpageBg.jpg);
+  background-image: url(http://0effortthemes.com/soccerclubv2/images/background/innerpageBg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -9rem;
@@ -581,7 +581,7 @@ body, a, p, input, select, textarea {
 .club {
   width: 100%;
   height: 50vh;
-  background-image: url(../../img/whiteBgBig.jpg);
+  background-image: url(../img/whiteBgBig.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -612,7 +612,7 @@ body, a, p, input, select, textarea {
   overflow: hidden;
   width: 100%;
   height: 120vh;
-  background-image: url(../../img/heroesBg.jpg);
+  background-image: url(../img/heroesBg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -747,7 +747,7 @@ body, a, p, input, select, textarea {
 
 .achievements {
   width: 100%;
-  background: url(../../img/bgTopLeft.png) left top no-repeat, url(../../img/bgBottomRight.png) right bottom no-repeat #f5f5f5; }
+  background: url(../img/bgTopLeft.png) left top no-repeat, url(../img/bgBottomRight.png) right bottom no-repeat #f5f5f5; }
   .achievements__container {
     display: flex;
     flex-direction: column;
@@ -782,7 +782,7 @@ body, a, p, input, select, textarea {
           flex-direction: column;
           width: 30%; }
           .achievements__container--winners--1--flex1--image {
-            background: url(../../img/background-news.jpg); }
+            background: url(../img/background-news.jpg); }
             .achievements__container--winners--1--flex1--image img {
               display: flex;
               margin: auto; }
@@ -819,7 +819,7 @@ body, a, p, input, select, textarea {
           flex-direction: column;
           width: 30%; }
           .achievements__container--winners--2--flex1--image {
-            background: url(../../img/background-news.jpg); }
+            background: url(../img/background-news.jpg); }
             .achievements__container--winners--2--flex1--image img {
               display: flex;
               margin: auto; }
@@ -856,7 +856,7 @@ body, a, p, input, select, textarea {
           flex-direction: column;
           width: 30%; }
           .achievements__container--winners--3--flex1--image {
-            background: url(../../img/background-news.jpg); }
+            background: url(../img/background-news.jpg); }
             .achievements__container--winners--3--flex1--image img {
               display: flex;
               margin: auto; }
@@ -889,7 +889,7 @@ body, a, p, input, select, textarea {
   overflow: hidden;
   width: 100%;
   height: 120vh;
-  background-image: url(../../img/playerdetailsBg.jpg);
+  background-image: url(../img/playerdetailsBg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -943,7 +943,7 @@ body, a, p, input, select, textarea {
           .players__container--playerinfo--1--socialicons--behance a {
             margin-right: 2rem; }
       .players__container--playerinfo--2 {
-        background-image: url(../../img/heroesBg.jpg);
+        background-image: url(../img/heroesBg.jpg);
         background-size: cover;
         width: 100%;
         padding-left: 1rem; }
@@ -982,7 +982,7 @@ body, a, p, input, select, textarea {
           line-height: 2.5rem; }
 
 .sponsors {
-  background-image: url(../../img/whiteBg.jpg);
+  background-image: url(../img/whiteBg.jpg);
   background-size: cover;
   width: 100%;
   height: 40vh; }
