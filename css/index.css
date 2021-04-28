@@ -36,69 +36,83 @@ body, a, p, input, select, textarea {
     position: absolute;
     background-color: black;
     width: 100%;
-    height: 15vh;
+    height: 8vh;
     opacity: 0.8;
     z-index: 1;
     display: flex;
     padding: 5rem 15rem;
-    justify-content: space-between;
     align-items: center; }
-    .banner-container__menu--menulist ul {
+    .banner-container__menu--menulist {
+      position: absolute;
+      left: 30rem; }
+      .banner-container__menu--menulist ul {
+        display: flex; }
+      .banner-container__menu--menulist li {
+        margin-right: 5rem; }
+    .banner-container__menu--logo {
+      position: absolute;
+      left: 2rem; }
+      .banner-container__menu--logo img {
+        width: 6rem;
+        height: 6rem; }
+    .banner-container__menu--title {
+      position: absolute;
+      left: 80rem;
+      width: 50rem;
+      height: 4rem;
+      font-size: 12rem;
+      font-style: italic;
+      color: darkslategrey;
+      font-family: auto;
       display: flex; }
-    .banner-container__menu--menulist li {
-      margin-right: 5rem; }
-    .banner-container__menu--logo img {
-      width: 15rem;
-      height: 15rem; }
+      .banner-container__menu--title input {
+        margin-right: 1rem;
+        padding: 0.5rem;
+        border: 1px solid lightgray;
+        background-color: white;
+        width: 40%;
+        border-radius: 2.5rem; }
+      .banner-container__menu--title button {
+        background-color: #11274e;
+        color: white;
+        width: 34%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .banner-container__menu--title button:hover {
+        background-color: #11274e;
+        transition: 1s ease; }
     .banner-container__menu--socialicons {
-      display: flex; }
+      display: flex;
+      position: absolute;
+      right: 2rem; }
       .banner-container__menu--socialicons--facebook {
-        border: 1px solid blue;
-        background-color: blue;
         height: fit-content;
         width: 4rem;
-        border-radius: 4rem;
-        margin: 1rem;
+        margin-right: 0.5rem;
         padding: 0.5rem; }
         .banner-container__menu--socialicons--facebook i {
-          font-size: 3rem; }
-      .banner-container__menu--socialicons--facebook:hover {
-        background-color: blue;
-        transition: 1s ease;
-        border: 1px solid blue; }
+          font-size: 2.4rem; }
       .banner-container__menu--socialicons--pinterest {
-        border: 1px solid red;
-        background-color: red;
         height: fit-content;
         width: fit-content;
-        border-radius: 52%;
-        margin: 1rem;
-        padding: 0.5rem; }
+        padding: 0.5rem;
+        margin-right: 1.5rem; }
         .banner-container__menu--socialicons--pinterest i {
-          font-size: 3rem; }
-      .banner-container__menu--socialicons--pinterest:hover {
-        transition: 1s ease;
-        background-color: red;
-        border: 1px solid red; }
+          font-size: 2.4rem; }
       .banner-container__menu--socialicons--twitter {
-        border: 1px solid cornflowerblue;
-        background-color: cornflowerblue;
         height: fit-content;
         width: fit-content;
-        border-radius: 52%;
-        margin: 1rem;
+        margin-right: 1rem;
         padding: 0.5rem; }
         .banner-container__menu--socialicons--twitter i {
-          font-size: 3rem; }
-      .banner-container__menu--socialicons--twitter:hover {
-        transition: 1s ease;
-        background-color: #8b96aa;
-        border: 1px solid cornflowerblue; }
+          font-size: 2.4rem; }
   .banner-container__backimg {
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
-    background-image: url(../img/back-blue.jpg);
+    background-image: url(../img/background01.jpg);
     background-size: cover;
     position: relative;
     overflow: hidden; }
@@ -107,7 +121,7 @@ body, a, p, input, select, textarea {
       height: 100vh;
       width: 100%;
       background-repeat: no-repeat;
-      background-image: url(../img/back_particlesblue.png);
+      background-image: url(../img/back_particles.png);
       animation: backparticles 1s ease-out;
       background-size: 62%;
       backface-visibility: hidden;
@@ -117,7 +131,7 @@ body, a, p, input, select, textarea {
       height: 100vh;
       width: 100%;
       background-repeat: no-repeat;
-      background-image: url(../img/front_particlesblue.png);
+      background-image: url(../img/front_particles.png);
       animation: frontparticles 1s ease-out;
       background-size: 76rem 71rem;
       background-position: 13rem;
@@ -127,33 +141,11 @@ body, a, p, input, select, textarea {
       width: 100%;
       height: 100vh;
       background-repeat: no-repeat;
-      background-image: url(../img/1_cover.png);
-      background-size: 134rem;
-      background-position: 19rem 7rem;
-      animation: player 1.4s;
+      background-image: url(../img/cover-img1.png);
+      background-size: 47rem;
+      background-position: 47rem 3rem;
+      animation: player 3s ease;
       overflow: hidden; }
-    .banner-container__backimg--title {
-      position: absolute;
-      right: 16rem;
-      top: 51rem;
-      width: fit-content;
-      font-size: 12rem;
-      font-style: italic;
-      color: darkslategrey;
-      font-family: auto;
-      display: flex; }
-      .banner-container__backimg--title input {
-        margin-right: 1rem;
-        padding: 1rem;
-        border: 1px solid lightgray; }
-      .banner-container__backimg--title button {
-        background-color: cornflowerblue;
-        color: white;
-        padding: 2rem 5rem;
-        border: none; }
-      .banner-container__backimg--title button:hover {
-        background-color: blue;
-        transition: 1s ease; }
 
 @keyframes backparticles {
   0% {
@@ -173,12 +165,10 @@ body, a, p, input, select, textarea {
 
 @keyframes player {
   0% {
-    background-size: 152rem;
-    background-position: -70rem 7rem;
+    background-position: -37rem 36rem;
     opacity: 0; }
   100% {
-    background-size: 134rem;
-    background-position: 19rem 7rem;
+    background-position: 47rem 3rem;
     opacity: 1; } }
 
 @keyframes ball {
@@ -215,23 +205,26 @@ body, a, p, input, select, textarea {
       font-size: 3rem;
       color: #444444; }
     .aboutscc__1--3 {
-      border: 1px solid cornflowerblue;
+      border: 1px solid #11274e;
       background-color: white;
       padding: 2rem 6rem;
       font-size: 1.7rem;
       font-weight: 600; }
     .aboutscc__1--3:hover {
       transition: 1.5s all ease;
-      background-color: cornflowerblue; }
+      background-color: #11274e;
+      color: white; }
     .aboutscc__1--4 {
-      border: 1px solid cornflowerblue;
-      background-color: cornflowerblue;
+      border: 1px solid #11274e;
+      background-color: #11274e;
+      color: white;
       padding: 2rem 6rem;
       font-size: 1.7rem;
       font-weight: 600; }
     .aboutscc__1--4:hover {
       transition: 1s all ease;
-      background-color: white; }
+      background-color: white;
+      color: black; }
   .aboutscc__2 {
     display: flex;
     flex-direction: column;
