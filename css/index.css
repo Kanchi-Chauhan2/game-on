@@ -142,9 +142,9 @@ body, a, p, input, select, textarea {
       height: 100vh;
       background-repeat: no-repeat;
       background-image: url(../img/cover-img1.png);
-      background-size: 47rem;
-      background-position: 47rem 3rem;
-      animation: player 2s ease;
+      background-size: 55rem;
+      background-position: 52rem 0rem;
+      animation: player 3s ease;
       overflow: hidden; }
 
 @keyframes backparticles {
@@ -168,7 +168,7 @@ body, a, p, input, select, textarea {
     background-position: -37rem 36rem;
     opacity: 0; }
   100% {
-    background-position: 47rem 3rem;
+    background-position: 52rem 0rem;
     opacity: 1; } }
 
 @keyframes ball {
