@@ -144,7 +144,7 @@ body, a, p, input, select, textarea {
       background-image: url(../img/cover-img1.png);
       background-size: 47rem;
       background-position: 47rem 3rem;
-      animation: player 3s ease;
+      animation: player 2s ease;
       overflow: hidden; }
 
 @keyframes backparticles {
