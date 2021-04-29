@@ -118,11 +118,12 @@ body, a, p, input, select, textarea {
     overflow: hidden; }
     .banner-container__backimg--backparticles {
       position: absolute;
+      left: 0;
       height: 100vh;
       width: 100%;
       background-repeat: no-repeat;
       background-image: url(../img/back_particles.png);
-      animation: backparticles 1s ease-out;
+      animation: backparticles 1.5s ease-out;
       background-size: 62%;
       backface-visibility: hidden;
       background-position: 35rem; }
@@ -150,17 +151,21 @@ body, a, p, input, select, textarea {
 @keyframes backparticles {
   0% {
     background-size: 200%;
+    left: -96rem;
     opacity: 0.4; }
   100% {
     background-size: 62%;
-    opacity: 0.8; } }
+    opacity: 0.8;
+    left: 0; } }
 
 @keyframes frontparticles {
   0% {
     background-size: 250rem 80rem;
+    background-position: -75rem;
     opacity: 0.2; }
   100% {
     background-size: 76rem 71rem;
+    background-position: 13rem;
     opacity: 0.8; } }
 
 @keyframes player {
