@@ -4,6 +4,7 @@
         <title>Game On</title>
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
     
@@ -45,31 +46,35 @@
                 </div>
                 <div class="banner-container__backimg--player">
                 </div>
-                
+                <div class="banner-container__backimg--title">
+                    <div class="banner-container__backimg--title--1">
+                        GAME ON
+                    </div>
+                    <div class="banner-container__backimg--title--2">
+                        STARTS
+                    </div>
+                    <div class="banner-container__backimg--title--3">
+                        FROM
+                    </div>
+                    <div class="banner-container__backimg--title--4">
+                        21<sup>st</sup>
+                    </div>
+                    <div class="banner-container__backimg--title--5">
+                        MAY,2021
+                    </div>
+                </div>
             </div>
         </div>
          
         <script>
-            let container=document.querySelector('.banner-container__backimg');
-            container.addEventListener('mousemove',(e)=>{
-                let player=document.querySelector('.banner-container__backimg--player');
+                let container=document.querySelector(".banner-container__backimg");
+                container.addEventListener('mousemove',(e)=>{
+                let player=document.querySelector(".banner-container__backimg--player");
                 let height = player.getBoundingClientRect().height;
                 let width = player.getBoundingClientRect().width;
-                console.log(width);
                 let x=(width-e.pageX*3)/100;
                 let y=(height-e.pageY*3)/100;
               player.style.transform=`translate(${x}px) translateY(${y}px)`;    
-            });
-
-            let container1=document.querySelector('.banner-container__backimg');
-            container1.addEventListener('mousemove',(e)=>{
-                let ball=document.querySelector('.banner-container__backimg--ball');
-                let height = ball.getBoundingClientRect().height;
-                let width = ball.getBoundingClientRect().width;
-                console.log(width);
-                let x=(width-e.pageX*2)/100;
-                let y=(height-e.pageY*2)/100;
-              ball.style.transform=`translate(${x}px) translateY(${y}px)`;    
             });
         </script>
     <!----------------------------------------page2------------------------------------------>
@@ -188,6 +193,484 @@
         if()
         resultboard.style.visibility="hidden";
     </script>-->
+
+     <!-------------------MATCH SCHEDULE----------------------->
+
+     <div class="match-container">
+        <div class="match-container__stuff">
+            <div class="match-container__stuff--heading">
+                MATCH <span>SCHEDULE</span>
+            </div>
+            <div class="match-container__stuff--underline">
+
+            </div>
+            <div class="match-container__stuff--para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel ipsam, nesciunt dolores consequatur, est tempora ut!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel ipsam, nesciunt dolores consequatur, est tempora ut! 
+            </div>
+            <div class="match-container__stuff--box">
+                
+                <div class="match-container__stuff--box--2">
+                    <div class="match-container__stuff--box--2--1">
+                        <div class="match-container__stuff--box--2--1--heading">
+                            NEXT MATCH
+                        </div>
+                        <div class="match-container__stuff--box--2--1--para">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus
+                        </div>
+                    </div> 
+                    <div class="match-container__stuff--box--2--container">
+                        <div class="match-container__stuff--box--2--container--para">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus
+                        </div>
+                        <div class="match-container__stuff--box--2--container--logos">
+                            <div class="match-container__stuff--box--2--container--logos--img1">
+                                <img src="img/logo-chennai.png"  alt=""/>
+                            </div>
+                            <div class="match-container__stuff--box--2--container--logos--versus">
+                                VS
+                            </div>
+                            <div class="match-container__stuff--box--2--container--logos--img2">
+                                <img src="img/logo-chennai.png" alt=""/>
+                            </div>
+                        </div>
+                        <div class="match-container__stuff--box--2--container--datentime">
+                            <div class="match-container__stuff--box--2--container--datentime--date">
+                                APRIL 30, 2021
+                            </div>
+                            <div class="match-container__stuff--box--2--container--datentime--time">
+                                18:25 PM
+                            </div>
+                        </div>
+                        <div class="match-container__stuff--box--2--container--stadium">
+                            WEMSDDLEY STADIUM(LONDON)
+                        </div>
+                    </div>
+                </div>
+                <div class="match-container__stuff--box--3">
+                        <ul class="match-container__stuff--box--3--list">
+                            <li class="match-container__stuff--box--3--list--1">00<span>days</span></li>
+                            <li class="match-container__stuff--box--3--list--2">00<br><span>hours</span></li>
+                            <li class="match-container__stuff--box--3--list--3">00<br><span>minutes</span></li>
+                            <li class="match-container__stuff--box--3--list--4">00<br><span>seconds</span></li>
+                        </ul>
+
+                </div>
+            </div>
+            <div class="match-container__stuff--box2">
+                <div class="match-container__stuff--box2--list">
+                    <ul>
+                        <li class="match-container__stuff--box2--list--1">
+                            <div class="match-container__stuff--box2--list--2--num1">
+                                1
+                            </div>
+                            <div class="match-container__stuff--box2--list--1--team1">
+                                LOREM
+                            </div>
+                            <div class="match-container__stuff--box2--list--1--versus">
+                                VS
+                            </div>
+                            <div class="match-container__stuff--box2--list--1--team2">
+                                EPSUM
+                            </div>
+                        </li>
+                        <li class="match-container__stuff--box2--list--2">
+                            <div class="match-container__stuff--box2--list--2--num2">
+                                2
+                            </div>
+                            <div class="match-container__stuff--box2--list--2--team1">
+                                LOREM
+                            </div>
+                            <div class="match-container__stuff--box2--list--2--versus">
+                                VS
+                            </div>
+                            <div class="match-container__stuff--box2--list--2--team2">
+                                EPSUM
+                            </div>
+                        </li>
+                        <li class="match-container__stuff--box2--list--3">
+                            <div class="match-container__stuff--box2--list--2--num3">
+                                3
+                            </div>
+                            <div class="match-container__stuff--box2--list--3--team1">
+                                LOREM
+                            </div>
+                            <div class="match-container__stuff--box2--list--3--versus">
+                                VS
+                            </div>
+                            <div class="match-container__stuff--box2--list--3--team2">
+                                EPSUM
+                            </div>
+                        </li>
+                        <li class="match-container__stuff--box2--list--4">
+                            <div class="match-container__stuff--box2--list--2--num4">
+                                4
+                            </div>
+                            <div class="match-container__stuff--box2--list--4--team1">
+                                LOREM
+                            </div>
+                            <div class="match-container__stuff--box2--list--4--versus">
+                                VS
+                            </div>
+                            <div class="match-container__stuff--box2--list--4--team2">
+                                EPSUM
+                            </div>
+                        </li>
+                        <li class="match-container__stuff--box2--list--5">
+                            <div class="match-container__stuff--box2--list--2--num5">
+                                5
+                            </div>
+                            <div class="match-container__stuff--box2--list--5--team1">
+                                LOREM
+                            </div>
+                            <div class="match-container__stuff--box2--list--5--versus">
+                                VS
+                            </div>
+                            <div class="match-container__stuff--box2--list--5--team2">
+                                EPSUM
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="match-container__stuff--box2--list--container">
+                    <div class="match-container__stuff--box2--list--container--heading">
+                        UPCOMING FEATURE
+                    </div>
+                    <div class="match-container__stuff--box2--list--container--para">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus
+    
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------box3------------------------------>
+
+            <!--<div class="match-container__stuff--box3">
+                <div class="match-container__stuff--box3--list">
+                    <div class="match-container__stuff--box3--list--container">
+                        <div class="match-container__stuff--box3--list--container--heading">
+                            UPCOMING FEATURE
+                        </div>
+                        <div class="match-container__stuff--box3--list--container--para">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus
+        
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="match-container__stuff--box3--list--1">
+                            <div class="match-container__stuff--box3--list--2--num1">
+                                1
+                            </div>
+                            <div class="match-container__stuff--box3--list--1--team1">
+                                LOREM
+                            </div>
+                            <div class="match-container__stuff--box3--list--1--versus">
+                                VS
+                            </div>
+                            <div class="match-container__stuff--box3--list--1--team2">
+                                EPSUM
+                            </div>
+                        </li>
+                        <li class="match-container__stuff--box3--list--2">
+                            <div class="match-container__stuff--box3--list--2--num2">
+                                2
+                            </div>
+                            <div class="match-container__stuff--box3--list--2--team1">
+                                LOREM
+                            </div>
+                            <div class="match-container__stuff--box3--list--2--versus">
+                                VS
+                            </div>
+                            <div class="match-container__stuff--box3--list--2--team2">
+                                EPSUM3
+                            </div>
+                        </li>
+                        <li class="match-container__stuff--box3--list--3">
+                            <div class="match-container__stuff--box3--list--2--num3">
+                                3
+                            </div>
+                            <div class="match-container__stuff--box3--list--3--team1">
+                                LOREM
+                            </div>
+                            <div class="match-container__stuff--box3--list--3--versus">
+                                VS
+                            </div>
+                            <div class="match-container__stuff--box3--list--3--team2">
+                                EPSUM
+                            </div>
+                        </li>
+                        <li class="match-container__stuff--box3--list--4">
+                            <div class="match-container__stuff--box3--list--2--num4">
+                                4
+                            </div>
+                            <div class="match-container__stuff--box3--list--4--team1">
+                                LOREM
+                            </div>
+                            <div class="match-container__stuff--box3--list--4--versus">
+                                VS
+                            </div>
+                            <div class="match-container__stuff--box3--list--4--team2">
+                                EPSUM
+                            </div>
+                        </li>
+                        <li class="match-container__stuff--box3--list--5">
+                            <div class="match-container__stuff--box3--list--2--num5">
+                                5
+                            </div>
+                            <div class="match-container__stuff--box3--list--5--team1">
+                                LOREM
+                            </div>
+                            <div class="match-container__stuff--box3--list--5--versus">
+                                VS
+                            </div>
+                            <div class="match-container__stuff--box3--list--5--team2">
+                                EPSUM
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                
+            </div>--->
+
+            
+        </div>
+    </div>
+<!-----------------------STRIP------------------------>
+
+    <div class="strip">
+        <div class="strip__logo">
+            <img src="img/logo_game_on.png" alt=""/>
+        </div>
+        <div class="strip__container">
+            <input type="text" class="strip__container--1" placeholder="Enter phone number"/>
+            <button class="strip__container--2">Get App Link</button>
+
+        </div>
+    </div>
+
+    <!-----------------OUR HEROES-------------------->
+
+    <div class="our-heroes">
+        <div class="our-heroes__container">
+            <div class="our-heroes__container--heading">
+                OUR <span>HEROES</span>
+            </div>
+            <div class="our-heroes__container--underline">
+
+            </div>
+            <div class="our-heroes__container--para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus.                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus
+
+            </div>
+            <div class="our-heroes__container--gliderbox">
+                <div class="our-heroes__container--gliderbox--card">
+                    <div class="our-heroes__container--gliderbox--card--img">
+                        <img src="img/dhoni.jpg" alt=""/>
+                    </div>
+                    <div class="our-heroes__container--gliderbox--card--name">
+                        DHONI
+                    </div>
+                    <div class="our-heroes__container--gliderbox--card--position">
+                        DEFENDER
+                    </div>
+                </div>
+                <div class="our-heroes__container--gliderbox--card">
+                    <div class="our-heroes__container--gliderbox--card--img">
+                        <img src="img/hp.jpg" alt=""/>
+                    </div>
+                    <div class="our-heroes__container--gliderbox--card--name">
+                        HARDIK PANDYA
+                    </div>
+                    <div class="our-heroes__container--gliderbox--card--position">
+                        DEFENDER
+                    </div>
+                </div>
+                <div class="our-heroes__container--gliderbox--card">
+                    <div class="our-heroes__container--gliderbox--card--img">
+                        <img src="img/SR.jpg" alt=""/>
+                    </div>
+                    <div class="our-heroes__container--gliderbox--card--name">
+                        SURESH RAINA
+                    </div>
+                    <div class="our-heroes__container--gliderbox--card--position">
+                        DEFENDER
+                    </div>
+                </div>
+         
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------SOCIAL ICONS---------------->
+
+    <div class="social">
+        <div class="social__container">
+            <div class="social__container--box">
+                <div class="social__container--box--heading">
+                    <i class="fa fa-facebook" style="color:white"></i>
+                </div>
+                <div class="social__container--box--para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim amet cumque quo at eius nulla, voluptates asaliquid placeat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. nemo ab praesentium voluptatum, exercitationem ad quo tempore quam temporibus voluptates odio, qui laborum pari
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------------BLOGS---------------------------->
+
+    <div class="about">
+        <div class="about__1">
+            <div class="about__1--heading">
+                ABOUT CRICKET CLUB
+            </div>
+            <div class="about__1--underline">
+
+            </div>
+            <div class="about__1--para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis vitae, velit perferendis dolor atque magni, porro minus repellendus nostrum alias ea deserunt. Vel quam explicabo laudantium accusamus est, nulla minima!
+            </div>
+            <div class="about__1--address">
+                <div class="about__1--address--title">
+                    ADDRESS:
+                </div>
+                <div class="about__1--address--loc">
+                    <span>239</span> main street London, England.
+                </div>
+            </div>
+            <div class="about__1--call">
+                <div class="about__1--call--title">
+                    CALL
+                </div>
+                <div class="about__1--call--num">
+                    1800-2222-3333
+                </div>
+            </div>
+        </div>
+        <div class="about__2">
+            <div class="about__2--heading">
+                RECENT NEWS
+            </div>
+            <div class="about__2--underline">
+            
+            </div>
+            <div class="about__2--div1">
+                <div class="about__2--div1--img">
+                    <img src="img/SR.jpg" alt=""/>
+                </div>
+                <div class="about__2--div1--flex">
+                    <div class="about__2--div1--flex--1">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis vitae
+                    </div>
+                    <div class="about__2--div1--flex--2">
+                        18 SEPTEMBER, 2021
+                    </div>
+                </div>
+            </div>
+            <div class="about__2--div2">
+                <div class="about__2--div2--img">
+                    <img src="img/SR.jpg" alt=""/>
+                </div>
+                <div class="about__2--div2--flex">
+                    <div class="about__2--div2--flex--1">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis vitae
+                    </div>
+                    <div class="about__2--div2--flex--2">
+                        18 SEPTEMBER, 2021
+                    </div>
+                </div>
+            </div>
+            <div class="about__2--div3">
+                <div class="about__2--div3--img">
+                    <img src="img/SR.jpg" alt=""/>
+                </div>
+                <div class="about__2--div3--flex">
+                    <div class="about__2--div3--flex--1">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis vitae
+                    </div>
+                    <div class="about__2--div3--flex--2">
+                        18 SEPTEMBER, 2021
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__3">
+            <div class="about__3--heading">
+                HOW TO PLAY
+            </div>
+            <div class="about__3--underline">
+
+            </div>
+            <div class="about__3--list">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                </ul>
+            </div>
+            <button class="about__3--btn">READ MORE</button>
+        </div>
+        <div class="about__4">
+            <div class="about__4--heading">
+                BLOGS
+            </div>
+            <div class="about__4--underline">
+
+            </div>
+            <div class="about__4--div1">
+                <div class="about__4--div1--img">
+                    <img src="img/SR.jpg" alt=""/>
+                <div class="about__4--div1--flex">
+                        <div class="about__4--div1--flex--name">
+                            JOHN DOE
+                        </div>
+                        <div class="about__4--div1--flex--date">
+                            18 April,2015
+                        </div>
+                        <div class="about__4--div1--flex--comment">
+                            nice and cool
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="about__4--div2">
+                <div class="about__4--div2--img">
+                    <img src="img/hp.jpg" alt=""/>
+                    <div class="about__4--div2--flex">
+                        <div class="about__4--div2--flex--name">
+                            JOHN DOE
+                        </div>
+                        <div class="about__4--div2--flex--date">
+                            18 April,2015
+                        </div>
+                        <div class="about__4--div2--flex--comment">
+                            nice and cool
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about__4--div3">
+                <div class="about__4--div3--img">
+                    <img src="img/dhoni.jpg" alt=""/>
+                    <div class="about__4--div3--flex">
+                        <div class="about__4--div3--flex--name">
+                            JOHN DOE
+                        </div>
+                        <div class="about__4--div3--flex--date">
+                            18 April,2015
+                        </div>
+                        <div class="about__4--div3--flex--comment">
+                            nice and cool
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>    
+
     <!------------------FOOTER----------------------->
     <div class="footer-container">
         <div class="footer-container__logo">
@@ -214,5 +697,6 @@
             </div>
         </div>
     </div>
-    </body>
+
+       </body>
 </html>
