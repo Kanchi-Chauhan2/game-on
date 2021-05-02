@@ -25,7 +25,8 @@ body, a, p, input, select, textarea {
   position: relative; }
 
 * {
-  list-style: none; }
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 .banner-container {
   width: 100%;
@@ -52,10 +53,10 @@ body, a, p, input, select, textarea {
         margin-right: 5rem; }
     .banner-container__menu--logo {
       position: absolute;
-      left: 2rem; }
+      left: 3rem; }
       .banner-container__menu--logo img {
-        width: 6rem;
-        height: 6rem; }
+        width: 8.5rem;
+        height: 8rem; }
     .banner-container__menu--title {
       position: absolute;
       left: 80rem;
@@ -174,7 +175,7 @@ body, a, p, input, select, textarea {
       .banner-container__backimg--title--3 {
         background-color: darkred;
         padding: 1.4rem 4rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
         transform: skewX(-15deg); }
       .banner-container__backimg--title--4 {
         color: darkslategrey;
@@ -432,23 +433,13 @@ body, a, p, input, select, textarea {
                     }*/ }
   .latest-result__4 {
     border-radius: 4%;
-    background-color: cornflowerblue;
+    background-image: linear-gradient(to right, #6189C5, #3A68AB);
     padding: 2rem 6rem;
     font-size: 1.7rem;
     font-weight: 600;
     border: none; }
     .latest-result__4 a {
       color: white; }
-  .latest-result__4:hover {
-    border-radius: 4%;
-    padding: 2rem 6rem;
-    font-size: 1.7rem;
-    font-weight: 600;
-    background-color: white;
-    transition: 1s all ease;
-    border: none; }
-    .latest-result__4:hover a {
-      color: cornflowerblue; }
 
 @keyframes wings {
   0% {
@@ -647,13 +638,15 @@ body, a, p, input, select, textarea {
       width: 75%;
       height: 50vh;
       display: flex;
-      margin-top: 5rem; }
+      margin-top: 5rem;
+      overflow: hidden; }
       .match-container__stuff--box--2 {
         background-image: url(../img/blackbg.jpg);
         background-size: cover;
         align-items: center;
         display: flex;
-        width: 85%; }
+        width: 85%;
+        overflow: hidden; }
         .match-container__stuff--box--2--1 {
           position: relative;
           border-bottom: 41rem solid darkred;
@@ -779,56 +772,77 @@ body, a, p, input, select, textarea {
       width: 75%;
       height: 50vh;
       margin-top: 5rem;
-      position: relative; }
+      position: relative;
+      overflow: hidden; }
       .match-container__stuff--box2--list {
         width: 70%;
-        overflow: hidden;
-        opacity: 0.8; }
+        opacity: 0.8;
+        overflow-y: auto; }
         .match-container__stuff--box2--list--1 {
           display: flex;
           color: white;
-          height: 15vh;
+          height: 10vh;
           justify-content: space-around;
           align-items: center;
           border-bottom: red;
-          font-size: 3rem; }
+          font-size: 2rem; }
           .match-container__stuff--box2--list--1--num1 {
             border-bottom: 1px solid red; }
         .match-container__stuff--box2--list--2 {
           display: flex;
           color: white;
-          height: 15vh;
+          height: 10vh;
           width: 100%;
           justify-content: space-around;
           align-items: center;
           border-bottom: red;
-          font-size: 3rem;
+          font-size: 2rem;
           background-color: black; }
         .match-container__stuff--box2--list--3 {
           display: flex;
           color: white;
-          height: 15vh;
+          height: 10vh;
           justify-content: space-around;
           align-items: center;
           border-bottom: red;
-          font-size: 3rem; }
+          font-size: 2rem; }
         .match-container__stuff--box2--list--4 {
           display: flex;
           color: white;
-          height: 15vh;
+          height: 10vh;
           justify-content: space-around;
           align-items: center;
           border-bottom: red;
-          font-size: 3rem; }
+          font-size: 2rem;
+          background-color: black; }
         .match-container__stuff--box2--list--5 {
           display: flex;
           width: 100%;
           color: white;
-          height: 15vh;
+          height: 10vh;
           justify-content: space-around;
           align-items: center;
           border-bottom: red;
-          font-size: 2.5rem; }
+          font-size: 2rem; }
+        .match-container__stuff--box2--list--6 {
+          display: flex;
+          width: 100%;
+          color: white;
+          height: 10vh;
+          justify-content: space-around;
+          align-items: center;
+          border-bottom: red;
+          font-size: 2rem;
+          background-color: black; }
+        .match-container__stuff--box2--list--7 {
+          display: flex;
+          width: 100%;
+          color: white;
+          height: 10vh;
+          justify-content: space-around;
+          align-items: center;
+          border-bottom: red;
+          font-size: 2rem; }
         .match-container__stuff--box2--list--container {
           border-bottom: 41rem solid darkred;
           border-left: 13.5rem solid transparent;
@@ -847,6 +861,9 @@ body, a, p, input, select, textarea {
             color: white;
             opacity: 0.7;
             font-size: 1.5rem; }
+
+.match-container__stuff--box2--list::-webkit-scrollbar {
+  display: none; }
 
 .strip {
   background-image: url(../img/ticketbooking.jpg);
