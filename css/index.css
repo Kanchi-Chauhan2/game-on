@@ -53,10 +53,11 @@ body, a, p, input, select, textarea {
         margin-right: 5rem; }
     .banner-container__menu--logo {
       position: absolute;
-      left: 2rem; }
+      left: 4rem;
+      top: 1.2rem; }
       .banner-container__menu--logo img {
-        width: 8rem;
-        height: 8.5rem; }
+        width: 8.4rem;
+        height: 8rem; }
     .banner-container__menu--title {
       position: absolute;
       left: 80rem;
@@ -151,8 +152,20 @@ body, a, p, input, select, textarea {
       backface-visibility: hidden;
       will-change: transform; }
       .banner-container__backimg--player img {
-        width: 46rem;
+        width: 50rem;
         height: 100vh; }
+    .banner-container__backimg--ball {
+      position: absolute;
+      left: 69rem;
+      bottom: 26rem;
+      animation: ball 2s;
+      animation-timing-function: cubic-bezier(0.05, 0.43, 0.46, 0.99);
+      backface-visibility: hidden;
+      will-change: transform; }
+      .banner-container__backimg--ball img {
+        width: 19rem;
+        height: 29rem;
+        opacity: 0.9; }
     .banner-container__backimg--title {
       position: absolute;
       right: 10rem;
@@ -225,9 +238,11 @@ body, a, p, input, select, textarea {
 
 @keyframes ball {
   0% {
-    background-position: 151rem 30rem; }
+    left: 75rem;
+    bottom: 75rem; }
   100% {
-    background-position: 103rem 20rem; } }
+    left: 69rem;
+    bottom: 26rem; } }
 
 @keyframes title {
   0% {
@@ -247,16 +262,22 @@ body, a, p, input, select, textarea {
     background-size: cover;
     width: 100%;
     height: 30vh;
-    padding: 3rem 21rem;
-    justify-content: space-around;
-    align-items: center; }
-    .aboutscc__1--1 img {
-      width: 20rem;
-      height: 20rem; }
+    align-items: center;
+    position: relative; }
+    .aboutscc__1--1 {
+      position: absolute;
+      left: 4rem; }
+      .aboutscc__1--1 img {
+        width: 20rem;
+        height: 20rem; }
     .aboutscc__1--2 {
+      position: absolute;
+      left: 30rem;
       font-size: 3rem;
       color: #444444; }
     .aboutscc__1--3 {
+      position: absolute;
+      right: 10rem;
       border: 1px solid #11274e;
       background-color: white;
       padding: 2rem 6rem;
@@ -267,6 +288,8 @@ body, a, p, input, select, textarea {
       background-color: #11274e;
       color: white; }
     .aboutscc__1--4 {
+      position: absolute;
+      right: 35rem;
       border: 1px solid #11274e;
       background-color: #11274e;
       color: white;
@@ -473,7 +496,7 @@ body, a, p, input, select, textarea {
 
 .match-container {
   width: 100%;
-  height: 150vh;
+  height: 230vh;
   padding: 4rem; }
   .match-container__stuff {
     display: flex;
@@ -877,6 +900,110 @@ body, a, p, input, select, textarea {
             color: white;
             opacity: 0.7;
             font-size: 1.5rem; }
+    .match-container__stuff--box3 {
+      display: flex;
+      background-image: url(../img/counterBg.jpg);
+      background-size: cover;
+      background-repeat: repeat;
+      width: 75%;
+      height: 50vh;
+      margin-top: 5rem;
+      position: relative;
+      overflow: hidden; }
+      .match-container__stuff--box3--list {
+        width: 100%;
+        opacity: 0.8;
+        overflow-y: auto;
+        position: absolute;
+        right: 0; }
+        .match-container__stuff--box3--list--container {
+          border-bottom: 41rem solid darkred;
+          border-right: 13.5rem solid transparent;
+          height: 0;
+          width: 47.5rem;
+          display: flex;
+          flex-direction: column;
+          position: absolute; }
+          .match-container__stuff--box3--list--container--heading {
+            transform: translate(2rem, 13rem);
+            color: white;
+            font-size: 2rem; }
+          .match-container__stuff--box3--list--container--para {
+            transform: translate(2rem, 14rem);
+            color: white;
+            opacity: 0.7;
+            font-size: 1.5rem; }
+        .match-container__stuff--box3--list--1 {
+          display: flex;
+          color: white;
+          height: 10vh;
+          justify-content: space-evenly;
+          align-items: center;
+          border-bottom: red;
+          font-size: 1.5rem;
+          padding-left: 35%; }
+          .match-container__stuff--box3--list--1--num1 {
+            border-bottom: 1px solid red; }
+        .match-container__stuff--box3--list--2 {
+          display: flex;
+          color: white;
+          height: 10vh;
+          width: 100%;
+          justify-content: space-evenly;
+          align-items: center;
+          border-bottom: red;
+          font-size: 1.5rem;
+          background-color: black;
+          padding-left: 35%; }
+        .match-container__stuff--box3--list--3 {
+          display: flex;
+          color: white;
+          height: 10vh;
+          justify-content: space-evenly;
+          align-items: center;
+          border-bottom: red;
+          font-size: 1.5rem;
+          padding-left: 35%; }
+        .match-container__stuff--box3--list--4 {
+          display: flex;
+          color: white;
+          height: 10vh;
+          justify-content: space-evenly;
+          align-items: center;
+          border-bottom: red;
+          font-size: 1.5rem;
+          background-color: black;
+          padding-left: 35%; }
+        .match-container__stuff--box3--list--5 {
+          display: flex;
+          width: 100%;
+          color: white;
+          height: 10vh;
+          justify-content: space-evenly;
+          align-items: center;
+          border-bottom: red;
+          font-size: 1.5rem;
+          padding-left: 35%; }
+        .match-container__stuff--box3--list--6 {
+          display: flex;
+          width: 100%;
+          color: white;
+          height: 10vh;
+          justify-content: space-evenly;
+          align-items: center;
+          border-bottom: red;
+          font-size: 1.5rem;
+          padding-left: 35%;
+          background-color: black; }
+        .match-container__stuff--box3--list--7 {
+          display: flex;
+          width: 100%;
+          color: white;
+          height: 10vh;
+          justify-content: space-evenly;
+          align-items: center;
+          font-size: 1.5rem;
+          padding-left: 35%; }
 
 .match-container__stuff--box2--list::-webkit-scrollbar {
   display: none; }
@@ -985,8 +1112,8 @@ body, a, p, input, select, textarea {
           align-items: center; }
 
 .social {
-  background-image: url(../img/about-banner.jpg);
-  opacity: 0.6;
+  background-image: url(../../img/about.jpg);
+  opacity: 0.9;
   background-position: 0rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1016,11 +1143,222 @@ body, a, p, input, select, textarea {
         text-align: center;
         font-size: 1.5rem; }
 
+.awards {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+  .awards__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .awards__content--heading {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-top: 5rem;
+      color: cornflowerblue; }
+    .awards__content--underline {
+      width: 8rem;
+      height: 0.3rem;
+      background-color: blue; }
+    .awards__content--para {
+      text-align: center;
+      width: 70%;
+      margin: 4rem;
+      color: gray;
+      line-height: 1.8rem; }
+    .awards__content--trophy {
+      display: flex;
+      width: 100%;
+      margin-top: 7rem;
+      justify-content: center; }
+      .awards__content--trophy--1 {
+        width: 20%;
+        height: 50vh;
+        margin-right: 1rem;
+        background-image: url(../../img/background-news.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-content: center;
+        overflow: hidden;
+        justify-content: center;
+        position: relative; }
+        .awards__content--trophy--1 img {
+          position: absolute;
+          left: 7rem;
+          top: 1rem; }
+        .awards__content--trophy--1--hoverlabel {
+          position: absolute;
+          bottom: 40rem;
+          width: 100%;
+          height: 6vh;
+          background-color: gray;
+          display: flex;
+          overflow: hidden; }
+          .awards__content--trophy--1--hoverlabel--awardname {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            border-right: 1rem solid transparent;
+            border-bottom: 5rem solid cornflowerblue; }
+          .awards__content--trophy--1--hoverlabel--champion {
+            color: white;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 2rem; }
+      .awards__content--trophy--2 {
+        width: 20%;
+        height: 50vh;
+        margin-right: 1rem;
+        background-image: url(../../img/background-news.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        position: relative; }
+        .awards__content--trophy--2 img {
+          position: absolute;
+          left: 7rem;
+          top: 1rem; }
+        .awards__content--trophy--2--hoverlabel {
+          position: absolute;
+          bottom: 40rem;
+          width: 100%;
+          height: 6vh;
+          background-color: gray;
+          display: flex;
+          overflow: hidden; }
+          .awards__content--trophy--2--hoverlabel--awardname {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            border-right: 1rem solid transparent;
+            border-bottom: 5rem solid cornflowerblue; }
+          .awards__content--trophy--2--hoverlabel--champion {
+            color: white;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 2rem; }
+      .awards__content--trophy--3 {
+        width: 20%;
+        height: 50vh;
+        margin-right: 1rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background-image: url(../../img/background-news.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative; }
+        .awards__content--trophy--3 img {
+          position: absolute;
+          left: 7rem;
+          top: 1rem; }
+        .awards__content--trophy--3--hoverlabel {
+          position: absolute;
+          bottom: 40rem;
+          width: 100%;
+          height: 6vh;
+          background-color: gray;
+          display: flex;
+          overflow: hidden; }
+          .awards__content--trophy--3--hoverlabel--awardname {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            border-right: 1rem solid transparent;
+            border-bottom: 5rem solid cornflowerblue; }
+          .awards__content--trophy--3--hoverlabel--champion {
+            color: white;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 2rem; }
+      .awards__content--trophy--4 {
+        width: 20%;
+        height: 50vh;
+        display: flex;
+        margin-right: 1rem;
+        overflow: hidden;
+        justify-content: center;
+        background-image: url(../../img/background-news.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative; }
+        .awards__content--trophy--4 img {
+          position: absolute;
+          left: 7rem;
+          top: 1rem; }
+        .awards__content--trophy--4--hoverlabel {
+          position: absolute;
+          bottom: 40rem;
+          width: 100%;
+          height: 6vh;
+          background-color: gray;
+          display: flex;
+          overflow: hidden; }
+          .awards__content--trophy--4--hoverlabel--awardname {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            border-right: 1rem solid transparent;
+            border-bottom: 5rem solid cornflowerblue; }
+          .awards__content--trophy--4--hoverlabel--champion {
+            color: white;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 2rem; }
+
+.awards__content--trophy--1:hover .awards__content--trophy--1--hoverlabel {
+  bottom: 0rem;
+  transition: 1s all ease; }
+
+.awards__content--trophy--2:hover .awards__content--trophy--2 img:hover {
+  width: 10rem;
+  left: 9rem;
+  top: 4rem; }
+
+.awards__content--trophy--2:hover .awards__content--trophy--2--hoverlabel {
+  bottom: 0rem;
+  transition: 1s all ease; }
+
+.awards__content--trophy--3:hover .awards__content--trophy--3 img:hover {
+  width: 10rem;
+  left: 9rem;
+  top: 4rem; }
+
+.awards__content--trophy--3:hover .awards__content--trophy--3--hoverlabel {
+  bottom: 0rem;
+  transition: 1s all ease; }
+
+.awards__content--trophy--4:hover .awards__content--trophy--4 img:hover {
+  width: 10rem;
+  left: 9rem;
+  top: 4rem; }
+
+.awards__content--trophy--4:hover .awards__content--trophy--4--hoverlabel {
+  bottom: 0rem;
+  transition: 1s all ease; }
+
 .about {
   background-color: #ECECEC;
   width: 100%;
-  height: 80vh;
-  padding: 5rem 10rem;
+  height: 85vh;
+  padding: 5rem 20rem;
   display: flex;
   overflow: hidden;
   justify-content: space-around; }
@@ -1038,13 +1376,13 @@ body, a, p, input, select, textarea {
       margin: 1.5rem 0rem; }
     .about__1--para {
       color: #444444;
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       line-height: 2.8rem;
       margin-top: 2.6rem;
       margin-bottom: 3rem; }
     .about__1--address {
       display: flex;
-      font-size: 1.6rem; }
+      font-size: 1.4rem; }
       .about__1--address--title {
         color: black; }
       .about__1--address--loc {
@@ -1053,7 +1391,7 @@ body, a, p, input, select, textarea {
           color: darkred; }
     .about__1--call {
       display: flex;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       margin-top: 1rem; }
       .about__1--call--title {
         color: black; }
@@ -1135,7 +1473,7 @@ body, a, p, input, select, textarea {
   .about__4 {
     width: 20%;
     height: 80vh;
-    margin: 3rem; }
+    margin-top: 3rem; }
     .about__4--heading {
       font-size: 2rem;
       color: darkred; }
