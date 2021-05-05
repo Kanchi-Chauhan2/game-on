@@ -124,7 +124,7 @@ body, a, p, input, select, textarea {
       height: 100vh;
       width: 100%;
       background-repeat: no-repeat;
-      background-image: url(../../img/back_particles.png);
+      background-image: url(../img/back_particles.png);
       animation: backparticles 3s;
       animation-timing-function: cubic-bezier(1, 0.01, 0, 1);
       background-size: 60rem 50rem;
@@ -255,6 +255,9 @@ body, a, p, input, select, textarea {
   height: 80vh;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 1500px) {
+    .aboutscc {
+      height: 68rem; } }
   .aboutscc__1 {
     display: flex;
     background-image: url(../img/whiteBg.jpg);
@@ -264,17 +267,28 @@ body, a, p, input, select, textarea {
     height: 30vh;
     align-items: center;
     position: relative; }
+    @media (max-width: 1500px) {
+      .aboutscc__1 {
+        height: 20vh; } }
     .aboutscc__1--1 {
       position: absolute;
       left: 4rem; }
       .aboutscc__1--1 img {
         width: 20rem;
         height: 20rem; }
+        @media (max-width: 1500px) {
+          .aboutscc__1--1 img {
+            width: 12rem;
+            height: 12rem; } }
     .aboutscc__1--2 {
       position: absolute;
       left: 30rem;
       font-size: 3rem;
       color: #444444; }
+      @media (max-width: 1500px) {
+        .aboutscc__1--2 {
+          left: 18rem;
+          font-size: 2rem; } }
     .aboutscc__1--3 {
       position: absolute;
       right: 10rem;
@@ -283,6 +297,10 @@ body, a, p, input, select, textarea {
       padding: 2rem 6rem;
       font-size: 1.7rem;
       font-weight: 600; }
+      @media (max-width: 1500px) {
+        .aboutscc__1--3 {
+          font-size: 1.4rem;
+          right: 1rem; } }
     .aboutscc__1--3:hover {
       transition: 1.5s all ease;
       background-color: #11274e;
@@ -296,6 +314,10 @@ body, a, p, input, select, textarea {
       padding: 2rem 6rem;
       font-size: 1.7rem;
       font-weight: 600; }
+      @media (max-width: 1500px) {
+        .aboutscc__1--4 {
+          font-size: 1.4rem;
+          right: 22rem; } }
     .aboutscc__1--4:hover {
       transition: 1s all ease;
       background-color: white;
@@ -318,6 +340,11 @@ body, a, p, input, select, textarea {
       color: lightgray;
       font-size: 1.5rem;
       text-align: justify; }
+      @media (max-width: 1500px) {
+        .aboutscc__2--2 {
+          padding: 2rem 18rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem; } }
     .aboutscc__2--3 {
       display: flex; }
       .aboutscc__2--3--matches {
@@ -365,6 +392,9 @@ body, a, p, input, select, textarea {
   padding: 3rem;
   align-items: center;
   overflow: hidden; }
+  @media (max-width: 1500px) {
+    .latest-result {
+      height: 80vh; } }
   .latest-result__1 {
     display: flex;
     flex-direction: column;
@@ -498,6 +528,9 @@ body, a, p, input, select, textarea {
   width: 100%;
   height: 230vh;
   padding: 4rem; }
+  @media (max-width: 1500px) {
+    .match-container {
+      height: 170vh; } }
   .match-container__stuff {
     display: flex;
     flex-direction: column;
@@ -681,6 +714,10 @@ body, a, p, input, select, textarea {
       display: flex;
       margin-top: 5rem;
       overflow: hidden; }
+      @media (max-width: 1500px) {
+        .match-container__stuff--box {
+          width: 95%;
+          height: 39vh; } }
       .match-container__stuff--box--2 {
         background-image: url(../img/blackbg.jpg);
         background-size: cover;
@@ -689,26 +726,24 @@ body, a, p, input, select, textarea {
         width: 85%; }
         .match-container__stuff--box--2--1 {
           position: relative;
-          border-bottom: 41rem solid darkred;
+          border-bottom: 55rem solid darkred;
           border-right: 13.5rem solid transparent;
           height: 0;
           width: 57.5rem;
           position: relative; }
           .match-container__stuff--box--2--1--heading {
             position: absolute;
-            top: 0rem;
+            top: 22rem;
             left: 2rem;
             color: white;
-            font-size: 2rem;
-            transform: translateY(13rem); }
+            font-size: 2rem; }
           .match-container__stuff--box--2--1--para {
             position: absolute;
-            top: 2rem;
+            top: 26rem;
             left: 2rem;
             color: white;
             opacity: 0.7;
-            font-size: 1.5rem;
-            transform: translateY(14rem); }
+            font-size: 1.5rem; }
         .match-container__stuff--box--2--container {
           display: flex;
           flex-direction: column;
@@ -745,7 +780,7 @@ body, a, p, input, select, textarea {
           background-size: cover;
           background-repeat: no-repeat;
           width: 18rem;
-          height: 10rem;
+          height: calc(50vh/4);
           border-bottom: 2px solid red;
           display: flex;
           flex-direction: column;
@@ -756,12 +791,15 @@ body, a, p, input, select, textarea {
           .match-container__stuff--box--3--list--1 span {
             color: white;
             font-size: 1.5rem; }
+          @media (max-width: 1500px) {
+            .match-container__stuff--box--3--list--1 {
+              height: calc(39vh/4); } }
         .match-container__stuff--box--3--list--2 {
           background-image: url(../img/counterBg.jpg);
           background-size: cover;
           background-repeat: no-repeat;
           width: 18rem;
-          height: 10.5rem;
+          height: calc(50vh/4);
           border-bottom: 2px solid red;
           display: flex;
           flex-direction: column;
@@ -772,12 +810,15 @@ body, a, p, input, select, textarea {
           .match-container__stuff--box--3--list--2 span {
             color: white;
             font-size: 1.5rem; }
+          @media (max-width: 1500px) {
+            .match-container__stuff--box--3--list--2 {
+              height: calc(39vh/4); } }
         .match-container__stuff--box--3--list--3 {
           background-image: url(../img/counterBg.jpg);
           background-size: cover;
           background-repeat: no-repeat;
           width: 18rem;
-          height: 10.5rem;
+          height: calc(50vh/4);
           border-bottom: 2px solid red;
           display: flex;
           flex-direction: column;
@@ -788,12 +829,15 @@ body, a, p, input, select, textarea {
           .match-container__stuff--box--3--list--3 span {
             color: white;
             font-size: 1.5rem; }
+          @media (max-width: 1500px) {
+            .match-container__stuff--box--3--list--3 {
+              height: calc(39vh/4); } }
         .match-container__stuff--box--3--list--4 {
           background-image: url(../img/counterBg.jpg);
           background-size: cover;
           background-repeat: no-repeat;
           width: 18rem;
-          height: 10rem;
+          height: calc(50vh/4);
           border-bottom: 6px solid red;
           display: flex;
           flex-direction: column;
@@ -804,6 +848,9 @@ body, a, p, input, select, textarea {
           .match-container__stuff--box--3--list--4 span {
             color: white;
             font-size: 1.5rem; }
+          @media (max-width: 1500px) {
+            .match-container__stuff--box--3--list--4 {
+              height: calc(39vh/4); } }
     .match-container__stuff--box2 {
       display: flex;
       background-image: url(../img/counterBg.jpg);
@@ -814,6 +861,10 @@ body, a, p, input, select, textarea {
       margin-top: 5rem;
       position: relative;
       overflow: hidden; }
+      @media (max-width: 1500px) {
+        .match-container__stuff--box2 {
+          width: 95%;
+          height: 39vh; } }
       .match-container__stuff--box2--list {
         width: 70%;
         opacity: 0.8;
@@ -883,8 +934,8 @@ body, a, p, input, select, textarea {
           align-items: center;
           font-size: 1.5rem; }
         .match-container__stuff--box2--list--container {
-          border-bottom: 41rem solid darkred;
-          border-left: 13.5rem solid transparent;
+          border-bottom: 55rem solid darkred;
+          border-left: 15.5rem solid transparent;
           height: 0;
           width: 47.5rem;
           display: flex;
@@ -910,6 +961,10 @@ body, a, p, input, select, textarea {
       margin-top: 5rem;
       position: relative;
       overflow: hidden; }
+      @media (max-width: 1500px) {
+        .match-container__stuff--box3 {
+          width: 95%;
+          height: 39vh; } }
       .match-container__stuff--box3--list {
         width: 100%;
         opacity: 0.8;
@@ -917,7 +972,7 @@ body, a, p, input, select, textarea {
         position: absolute;
         right: 0; }
         .match-container__stuff--box3--list--container {
-          border-bottom: 41rem solid darkred;
+          border-bottom: 55rem solid darkred;
           border-right: 13.5rem solid transparent;
           height: 0;
           width: 47.5rem;
@@ -925,11 +980,11 @@ body, a, p, input, select, textarea {
           flex-direction: column;
           position: absolute; }
           .match-container__stuff--box3--list--container--heading {
-            transform: translate(2rem, 13rem);
+            transform: translate(2rem, 20rem);
             color: white;
             font-size: 2rem; }
           .match-container__stuff--box3--list--container--para {
-            transform: translate(2rem, 14rem);
+            transform: translate(2rem, 23rem);
             color: white;
             opacity: 0.7;
             font-size: 1.5rem; }
@@ -1018,6 +1073,9 @@ body, a, p, input, select, textarea {
   width: 100%;
   overflow: hidden;
   padding: 0rem 10rem; }
+  @media (max-width: 1500px) {
+    .strip {
+      height: 20vh; } }
   .strip__logo {
     flex: 1; }
     .strip__logo img {
@@ -1120,6 +1178,9 @@ body, a, p, input, select, textarea {
   width: 100%;
   height: 50vh;
   overflow: hidden; }
+  @media (max-width: 1500px) {
+    .social {
+      height: 40vh; } }
   .social__container {
     display: flex;
     justify-content: center; }
@@ -1130,6 +1191,9 @@ body, a, p, input, select, textarea {
       height: 50vh;
       justify-content: center;
       align-items: center; }
+      @media (max-width: 1500px) {
+        .social__container--box {
+          height: 40vh; } }
       .social__container--box--heading {
         align-content: center;
         margin-bottom: 2rem; }
@@ -1149,6 +1213,9 @@ body, a, p, input, select, textarea {
   display: flex;
   flex-direction: column;
   overflow: hidden; }
+  @media (max-width: 1500px) {
+    .awards {
+      height: 75vh; } }
   .awards__content {
     display: flex;
     flex-direction: column;
@@ -1185,6 +1252,9 @@ body, a, p, input, select, textarea {
         overflow: hidden;
         justify-content: center;
         position: relative; }
+        @media (max-width: 1500px) {
+          .awards__content--trophy--1 {
+            height: 36vh; } }
         .awards__content--trophy--1 img {
           position: absolute;
           left: 7rem;
@@ -1205,6 +1275,9 @@ body, a, p, input, select, textarea {
             font-size: 2.5rem;
             border-right: 1rem solid transparent;
             border-bottom: 5rem solid cornflowerblue; }
+            @media (max-width: 1500px) {
+              .awards__content--trophy--1--hoverlabel--awardname {
+                border-bottom: 8rem solid cornflowerblue; } }
           .awards__content--trophy--1--hoverlabel--champion {
             color: white;
             display: flex;
@@ -1222,6 +1295,9 @@ body, a, p, input, select, textarea {
         justify-content: center;
         overflow: hidden;
         position: relative; }
+        @media (max-width: 1500px) {
+          .awards__content--trophy--2 {
+            height: 36vh; } }
         .awards__content--trophy--2 img {
           position: absolute;
           left: 7rem;
@@ -1242,6 +1318,9 @@ body, a, p, input, select, textarea {
             font-size: 2.5rem;
             border-right: 1rem solid transparent;
             border-bottom: 5rem solid cornflowerblue; }
+            @media (max-width: 1500px) {
+              .awards__content--trophy--2--hoverlabel--awardname {
+                border-bottom: 8rem solid cornflowerblue; } }
           .awards__content--trophy--2--hoverlabel--champion {
             color: white;
             display: flex;
@@ -1259,6 +1338,9 @@ body, a, p, input, select, textarea {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative; }
+        @media (max-width: 1500px) {
+          .awards__content--trophy--3 {
+            height: 36vh; } }
         .awards__content--trophy--3 img {
           position: absolute;
           left: 7rem;
@@ -1279,6 +1361,9 @@ body, a, p, input, select, textarea {
             font-size: 2.5rem;
             border-right: 1rem solid transparent;
             border-bottom: 5rem solid cornflowerblue; }
+            @media (max-width: 1500px) {
+              .awards__content--trophy--3--hoverlabel--awardname {
+                border-bottom: 8rem solid cornflowerblue; } }
           .awards__content--trophy--3--hoverlabel--champion {
             color: white;
             display: flex;
@@ -1296,6 +1381,9 @@ body, a, p, input, select, textarea {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative; }
+        @media (max-width: 1500px) {
+          .awards__content--trophy--4 {
+            height: 36vh; } }
         .awards__content--trophy--4 img {
           position: absolute;
           left: 7rem;
@@ -1316,6 +1404,9 @@ body, a, p, input, select, textarea {
             font-size: 2.5rem;
             border-right: 1rem solid transparent;
             border-bottom: 5rem solid cornflowerblue; }
+            @media (max-width: 1500px) {
+              .awards__content--trophy--4--hoverlabel--awardname {
+                border-bottom: 8rem solid cornflowerblue; } }
           .awards__content--trophy--4--hoverlabel--champion {
             color: white;
             display: flex;
@@ -1360,6 +1451,7 @@ body, a, p, input, select, textarea {
   height: 85vh;
   padding: 5rem 20rem;
   display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
   justify-content: space-around; }
   .about__1 {
