@@ -125,8 +125,6 @@ body, a, p, input, select, textarea {
       width: 100%;
       background-repeat: no-repeat;
       background-image: url(../img/back_particles.png);
-      animation: backparticles 3s;
-      animation-timing-function: cubic-bezier(1, 0.01, 0, 1);
       background-size: 60rem 50rem;
       background-position: 45rem 20rem;
       backface-visibility: hidden;
@@ -137,8 +135,6 @@ body, a, p, input, select, textarea {
       width: 100%;
       background-repeat: no-repeat;
       background-image: url(../img/front_particles.png);
-      animation: frontparticles 1.6s;
-      animation-timing-function: cubic-bezier(1, 0, 0.56, 0.95);
       background-size: 105rem 59rem;
       background-position: 17rem 12rem;
       backface-visibility: hidden;
@@ -147,8 +143,6 @@ body, a, p, input, select, textarea {
       position: absolute;
       left: 48rem;
       top: 0rem;
-      animation: player 2s;
-      animation-timing-function: cubic-bezier(1, 0, 0.56, 0.95);
       backface-visibility: hidden;
       will-change: transform; }
       .banner-container__backimg--player img {
@@ -158,8 +152,6 @@ body, a, p, input, select, textarea {
       position: absolute;
       left: 69rem;
       bottom: 26rem;
-      animation: ball 2s;
-      animation-timing-function: cubic-bezier(0.05, 0.43, 0.46, 0.99);
       backface-visibility: hidden;
       will-change: transform; }
       .banner-container__backimg--ball img {
@@ -175,8 +167,6 @@ body, a, p, input, select, textarea {
       width: fit-content;
       height: fit-content;
       align-items: flex-end;
-      animation: title 2s;
-      animation-timing-function: cubic-bezier(1, 0, 0.56, 0.95);
       backface-visibility: hidden;
       will-change: transform; }
       .banner-container__backimg--title--1 {
