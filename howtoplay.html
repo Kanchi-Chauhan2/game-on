@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/index.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -120,7 +122,28 @@
             </div>
         </div>
         <div class="guidelines__3">
-            
+            <div class="guidelines__3">
+                <div class="guidelines__3--photo">
+                    <div class="guidelines__3--photo--img1">
+                        <img src="img/flag_america.jpg"/>
+                    </div>
+                    <div class="guidelines__3--photo--img2">
+                        <img src="img/player_american.jpg"/>
+                    </div>
+                </div>
+                <div class="guidelines__3--text">
+                    <div class="guidelines__3--text--underline">
+    
+                    </div>
+                    <div class="guidelines__3--text--heading">
+                        RULE 1: Lorem Epsum
+                    </div>
+                    <div class="guidelines__3--text--text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel ipsam, nesciunt dolores consequatur, est tempora ut! Est?>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel ipsam, nesciunt dolores consequatur, est tempora ut! Est.
+                    </div>
+                </div>
+    
+            </div>
         </div>
         <div class="guidelines__4">
             
@@ -143,5 +166,60 @@
         }
         window.addEventListener('scroll',scrollAppear);
     </script>
+       <script>
+        function scrollAppear(){
+            var text=document.querySelector('.guidelines__2--text');
+            var photo=document.querySelector('.guidelines__2--photo');
+            var textpos=text.getBoundingClientRect().top;
+            var screenpos=window.innerHeight/2;
+
+            if(textpos<screenpos){
+                text.classList.add('change_text');
+                photo.classList.add('change_text');
+            }
+        }
+        window.addEventListener('scroll',scrollAppear);
+    </script>
+           <script>
+            function scrollAppear(){
+                var text=document.querySelector('.guidelines__3--text');
+                var photo=document.querySelector('.guidelines__3--photo');
+                var textpos=text.getBoundingClientRect().top;
+                var screenpos=window.innerHeight/2;
+    
+                if(textpos<screenpos){
+                    text.classList.add('change_text');
+                    photo.classList.add('change_text');
+                }
+            }
+            window.addEventListener('scroll',scrollAppear);
+        </script>
+    
+    <!------------------FOOTER----------------------->
+    <div class="footer-container">
+        <div class="footer-container__logo">
+            <img src="img/logo_game_on-03 (1).png" alt="logo-image"/>
+        </div>
+        <div class="footer-container__menu">
+            <ul style="color:white; list-style: none; line-height: 4rem;">
+                <li>Home</li>
+                <li>How to play</li>
+                <li>About Us</li>
+                <li>Help Desk</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="footer-container__socialicons">
+            <div class="footer-container__socialicons--facebook">
+                <i class="fa fa-facebook" style="color:whitesmoke"></i>
+            </div>
+            <div class="footer-container__socialicons--pinterest">
+                <i class="fa fa-pinterest" style="color:whitesmoke"></i>
+            </div>
+            <div class="footer-container__socialicons--twitter">
+                <i class="fa fa-twitter" style="color:whitesmoke"></i>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
